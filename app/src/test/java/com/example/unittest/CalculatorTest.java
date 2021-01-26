@@ -17,13 +17,13 @@ public class CalculatorTest {
     @Test
     public void addTest() {
         int result = calculator.add(15,10);
-        assertEquals(25, result);
+        assertEquals("기대값과 결과값이 다르다",25, result);
     }
 
     // 테스트 수행시간 지정
     @Test(timeout = 1000)
     public void subtractTest() {
         int result = calculator.subtract(15,10);
-        assertEquals(53, result);
+        assertEquals(5, result);
     }
 }
